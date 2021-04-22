@@ -47,23 +47,53 @@ jupyter notbook
 
 [INSERT SCREENSHOT HERE]
 
-* Click on the file called `part1.ipynb`.
+* Click on the file called `part1.ipynb` to complete Part 1 of the problem set.
 
 ### Step 3: Using a jupyter notebook
 Continue with the rest of Part 1 by following the instructions in the provided jupyter notebook, `part1.ipynb`.
 
-## Part 2A (for people who will continue on to CS2)
-**This component of the problem set is for students who plan to take CS2. If you do not plan to take CS2, you can skip this section.**
 
-In this part, you will write a program that runs a simulation to approximate the best case, worst case, and average case for bubble sort and selection sort. Start by examining the files in the `part2A` folder. Open the included Python program, `part2A.py` in Atom. 
+## Part 2: Using Atom and the terminal to develop and run your code 
 
-In `part2A.py`, you'll see that I have included the code for bubble sort and selection sort. 
+### Step 1: Install Atom
+[Download Atom from here](https://atom.io) and then double-click the downloaded file to unzip it. This will install Atom. Move the Atom icon to your Desktop since sometimes it works weirdly when it's in your Downloads directory.
+
+
+### Step 2: Open a file in Atom
+In Atom, go to `File -> Open`, navigate to this folder, and select `part2.py`.
+
+
+### Step 3: Inspect and edit a file in Atom
+Within Atom, insert a print statement just inside the outside for loop in each of the two sorting functions. Save the program by hitting `command-s` on Mac, `ctr-s` on Windows, or by going up to `File->Save`.
+
+### Step 4: Run a Python program in a shell
+* Open a Terminal (in Mac) or cmd (in Windows). Follow the steps in Part 1, Step 2 above to navigate to this folder using the `cd` command. 
+* In the terminal or cmd Window, type the following
+
+```
+python3 part2.py
+```
+
+If you are on Windows, you might need to type:
+
+```
+python part2.py
+```
+
+You should see the output of the print statements you inserted.
+
+### Step 5: Finish writing the program
+Now you will finish writing `part2.py` to run a simulation to approximate the best case, worst case, and average case for bubble sort and selection sort. 
+
+When you look `part2.py` (**in Atom**), you'll see that I have included the code for bubble sort and selection sort. 
 
 * First, you will modify the code to keep track of and return the number of comparisons that are made in one run of the function. 
 
 * Next, in your `main()` function, you will create two empty lists `bubblelist` and `selectionlist`. You will generate 100 different lists of length 10 of random integers. You will submit each list to the two sort methods and keep track of how many comparisons were required to sort each list. You will then report the minimum number of comparisons, the maximum number of comparisons, and the average number of comparisons for for each sorting algorithms. Finally, you will plot an appropriate labeled histogram for each list.
 
-Below I have provided "pseudocode" for you to implement in your `main()` function:
+* Remember that you should frequently test your program by saving it and running it! Insert **print statements** to debug as needed.
+
+Below I have provided "pseudocode" for you to implement in your `main()` function. This pseudocode is included as comments in the `part2.py` file.
 
 ```
 declare bubblelist, selectionlist as empty lists
@@ -73,7 +103,7 @@ while counter < 100
    make a copy of that list
    submit the first list to bubblesort()
    append the result to bubblelist
-   submit the second list fo selectionsort()
+   submit the second list to selectionsort()
    append the result to selectionlist
 
 print min, max, average of bubblelist
@@ -84,33 +114,13 @@ plot histogram of bubblelist with appropriate labels
 plot histogram of selectionlist with appropriate labels
 ```
 
+### Step 6: Document your use of Atom and the shell
 * Finally, take a screenshot of your program in Atom and your output on the terminal so that I know you used Atom to write the program and the terminal to run the program.
-
-## Part 2B (for people who will *not* continue on to CS2)
-**This component of the problem set is for students who do *not* plan to take CS2. If you plan to take CS2, you can skip this section. If you are interested, you can complete part 2A, but you will be given no additional credit.**
-
-In Part 2B you will be writing a program that lets you compare the frequencies of characters in four different languages and use this information to guess the language of a new input text. I have provided started code in the `part2B` directory in a file called `part2B.py`. Here are your tasks:
-
-1. Write a function `countletters(filename)` that reads in a file (the argument `filename`) and counts the number of times each character appears in that file, storing this information in a dictionary that maps letters to frequencies in that file. The function will **return this dictionary**.
-
-2. Inspect the code I have provided for the function called `plotdistributions(chardictionary)`, which takes as an argument one of the dictionaries you created above that maps letters to their counts in a text. This function will create a bar chart showing the distributions of the various characters in a text.
-
-3. Write a function `predictlanguage(filename)` that calls `countletters(filename)` and then uses the output 
-
-3. Take a screenshot of your program in the Anaconda editor and your output on the Anaconda Python shell so that I know you used Anaconda to write the program and the terminal to run the program.
 
 ---
 
 ## What to submit
- Delete `part2a.py` if you completed Part 2B. Delete the `part2b` folder if you completed Part 2A. 
-
-When you have done this, you should have
- * a completed `part.ipynb`
- **AND** 
- * *EITHER* a completed `part2a.py` *OR* a `part2b` folder containing your completed `part2b.py` program and all the associated text files.
- 
- 
- Zip up the `ps10-main` folder, and submit the zipped file to Canvas.
+Make sure that `part1.ipynb` and `part2.py` are complete and run as expected. Then make sure they are in your `ps10-main` folder. Zip up the `ps10-main` folder, and submit the zipped file to Canvas.
  
  ### Due Tuesday, May 4, 2021, at 11:59pm EST
 
