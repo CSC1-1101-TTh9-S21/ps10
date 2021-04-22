@@ -116,12 +116,12 @@ plot histogram of selectionlist with appropriate labels
 ```
 
 ### Step 6: Document your use of Atom and the shell
-* Finally, take a screenshot of your program in Atom and your output on the terminal so that I know you used Atom to write the program and the terminal to run the program.
+Take a screenshot of your program in Atom and a screenshot of your output on the terminal/cmd so that I know you used Atom to write the program and the terminal/cmd to run the program.
 
 ---
 
 ## What to submit
-Make sure that `part1.ipynb` and `part2.py` are complete and run as expected. Then make sure they are in your `ps10-main` folder. Zip up the `ps10-main` folder, and submit the zipped file to Canvas.
+Make sure that `part1.ipynb` and `part2.py` are complete and run as expected. Then make sure they are in your `ps10-main` folder, along with your two screenshots. Zip up the `ps10-main` folder, and submit the zipped file to Canvas.
  
  ### Due Tuesday, May 4, 2021, at 11:59pm EST
 
