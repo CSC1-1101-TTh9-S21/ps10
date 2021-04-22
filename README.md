@@ -18,14 +18,14 @@ Be sure to check the alternative things to type in [the previous instructions fo
 ### Step 2: Opening the jupyter notebook
 Keep your terminal open! You need to navigate to the folder you downloaded in order to access the jupyter notebook, `part1.ipynb`. Recall that your `ps10-main` folder you downloaded must be on your desktop in order for these instructions to work. Here is how to do it:
 
-* On a Mac or in Linux, in a terminal type: 
+* On a **Mac** or in Linux, in a terminal type: 
 
 ```
 cd ~/Desktop/ps10-main
 jupyter notebook
 ```
 
-* On Windows, in the command or cmd application, type the following:
+* On **Windows**, in the `command` or `cmd` application, type the following:
 
 ```
 cd Desktop 
@@ -40,7 +40,7 @@ cd c:\Users\your-username\Desktop
 Then type
 
 ```
-jupyter notbook
+jupyter notebook
 ```
 
 * On both Windows and Mac, this will open your default browser, and you'll see a screen that looks like this:
