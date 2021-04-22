@@ -28,13 +28,13 @@ jupyter notebook
 * On **Windows**, in the `command` or `cmd` application, type the following:
 
 ```
-cd Desktop 
+cd Desktop\ps10-main
 ```
 
 If you get an error, try this instead, where `your-username` is your username.
 
 ```
-cd c:\Users\your-username\Desktop
+cd c:\Users\your-username\Desktop\ps10-main
 ```
 
 Then type
