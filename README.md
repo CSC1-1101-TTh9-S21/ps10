@@ -52,6 +52,7 @@ jupyter notebook
 ### Step 3: Using a jupyter notebook
 Continue with the rest of Part 1 by following the instructions in the provided jupyter notebook, `part1.ipynb`.
 
+---
 
 ## Part 2: Using Atom and the terminal to develop and run your code 
 
