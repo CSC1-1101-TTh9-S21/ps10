@@ -8,7 +8,7 @@ Download this whole directory **to your desktop (!!!)**, unzip it, and carry out
 
 ---
 
-## Part 1: Using a Jupyter notebook
+## Part 1: Writing Python with a Jupyter notebook
 
 ### Step 1: Installing jupyter
 To use a Jupyter notebook, you need to install the `juypter` library. To do so, just follow [the directions in PS7 for installing libraries](https://github.com/CSC1-1101-TTh9-S21/ps7#step-1-install-the-libraries). In other words, launch a Terminal (Mac) or command (Windows) and type:
