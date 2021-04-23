@@ -1,9 +1,14 @@
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
 def bubblesort(mylist):
 
+    comparisons = 0
     # You have to go through the list n times.
     for i in range(len(mylist)):
 
-        # Each time throug the list, it might turn out
+        # Each time through the list, it might turn out
         # to be sorted already. You can tell it's sorted
         # if the number of swaps made is 0.
         swaps = 0
@@ -11,9 +16,13 @@ def bubblesort(mylist):
         # You'll compare each element with the element
         # that comes next, and swap if the former > the latter.
         # That's why you stop at len(mylist)-1
-        for j in range(len(mylist)-1):
+        # And since each time you go through, you fix the another
+        # position at the end, you only need to go up to
+        # len(mylist)-i-1
+        for j in range(len(mylist)-i-1):
 
             # if the current item > next item swap them
+            comparisons +=1
             if mylist[j] > mylist[j+1]:
                 temp = mylist[j]
                 mylist[j] = mylist[j+1]
@@ -22,8 +31,7 @@ def bubblesort(mylist):
         # If you get all the way through with no swaps
         # the list is sorted, so you can quit.
         if swaps == 0:
-             return
-
+             return 
 
 def selectionsort(mylist):
 
@@ -31,6 +39,7 @@ def selectionsort(mylist):
     # be right after you find the correct
     # element for the second to last element
     # so you can skip it.
+    comparisons = 0
     for i in range(len(mylist)-1):
 
         # Keep track of the minimum value and
@@ -41,6 +50,7 @@ def selectionsort(mylist):
         # When you find something smaller than the current
         # mininum, set it as the new minimum.
         for j in range(i+1, len(mylist)):
+            comparisons += 1
             if mylist[j] < minval:
                 minval = mylist[j]
                 minindex = j
@@ -62,9 +72,11 @@ def main():
     bubblesort(testlist)
     selectionsort(testlist2)
 
+    # Implement this pseudocode below.
+
     # declare bubblelist, selectionlist as empty lists
     # declare counter as an int equal to 0
-    # while counter < 100
+    # while counter < 1000
        # create list of length 10 containing ten random ints
        #     between 1 and 100 (duplicates are okay)
        # make a copy of that list (use the copy() function)
