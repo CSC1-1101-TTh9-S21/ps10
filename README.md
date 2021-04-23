@@ -47,7 +47,7 @@ jupyter notebook
 
 * On both Windows and Mac, this will open your default browser, and you'll see a screen that looks like this:
 
-[INSERT SCREENSHOT HERE]
+<img src="jupyter.png" width=600>
 
 * Click on the file called `part1.ipynb` to complete Part 1 of the problem set.
 
@@ -91,7 +91,7 @@ Now you will finish writing `part2.py` to run a simulation to approximate the be
 
 When you look at `part2.py` (**in Atom!**), you'll see that I have included the code for bubble sort and selection sort. 
 
-* First, you will modify the code of these two functions to **keep track of and return** the number of comparisons that are made in one run of the function, where "comparison" means "anything that involves < or >.
+* First, you will modify the code of these two functions to **keep track of and return** the number of comparisons that are made in one run of the function, where "comparison" means "anything that involves < or >".
 
 * Next, in your `main()` function, you will create two empty lists `bubblelist` and `selectionlist`. You will generate 1000 different lists of length 10 of random integers using some function in the `random` library.  You will submit each list to the two sort methods and keep track of how many comparisons were required to sort each list. You will then report the minimum number of comparisons, the maximum number of comparisons, and the average number of comparisons for each sorting algorithm. Finally, you will plot an appropriate labeled histogram for each list.
 
