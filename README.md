@@ -115,6 +115,15 @@ plot histogram of bubblelist with appropriate labels
 plot histogram of selectionlist with appropriate labels
 ```
 
+Here is some output I got. Note that your exact numbers will be different since the lists are randomly generated.
+
+```
+Bubble sort:	    min=24, max=45, mean=42.017
+Selection sort:	 min=45, max=45, mean=45.0
+```
+
+<img src="bubble.png">
+
 ### Step 6: Document your use of Atom and the shell
 Take a screenshot of your program in Atom and a screenshot of your output on the terminal/cmd so that I know you used Atom to write the program and the terminal/cmd to run the program.
 
