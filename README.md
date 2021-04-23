@@ -6,10 +6,12 @@ As always, you will submit to Canvas **a single .zip file**. Detailed instructio
 
 Download this whole directory **to your desktop (!!!)**, unzip it, and carry out the tasks described below.
 
+---
+
 ## Part 1: Using a Jupyter notebook
 
 ### Step 1: Installing jupyter
-To use a Jupyter notebook, you need to install the `juypter` library. To do, just follow [the directions in PS7 for installing libraries](https://github.com/CSC1-1101-TTh9-S21/ps7#step-1-install-the-libraries). In other words, launch a Terminal (Mac) or command (Windows) and type:
+To use a Jupyter notebook, you need to install the `juypter` library. To do so, just follow [the directions in PS7 for installing libraries](https://github.com/CSC1-1101-TTh9-S21/ps7#step-1-install-the-libraries). In other words, launch a Terminal (Mac) or command (Windows) and type:
 
 `pip3 install jupyter`
 
@@ -67,6 +69,7 @@ In Atom, go to `File -> Open`, navigate to this folder, and select `part2.py`.
 ### Step 3: Inspect and edit a file in Atom
 Within Atom, insert a print statement just inside the outside for loop in each of the two sorting functions. Save the program by hitting `command-s` on Mac, `ctr-s` on Windows, or by going up to `File->Save`.
 
+
 ### Step 4: Run a Python program in a shell
 * Open a Terminal (in Mac) or cmd (in Windows). Follow the steps in Part 1, Step 2 above to navigate to this folder using the `cd` command. 
 * In the terminal or cmd Window, type the following
@@ -86,20 +89,20 @@ You should see the output of the print statements you inserted.
 ### Step 5: Finish writing the program
 Now you will finish writing `part2.py` to run a simulation to approximate the best case, worst case, and average case for bubble sort and selection sort. 
 
-When you look `part2.py` (**in Atom**), you'll see that I have included the code for bubble sort and selection sort. 
+When you look at `part2.py` (**in Atom!**), you'll see that I have included the code for bubble sort and selection sort. 
 
-* First, you will modify the code to keep track of and return the number of comparisons that are made in one run of the function. 
+* First, you will modify the code of these two functions to **keep track of and return** the number of comparisons that are made in one run of the function, where "comparison" means "anything that involves < or >.
 
-* Next, in your `main()` function, you will create two empty lists `bubblelist` and `selectionlist`. You will generate 100 different lists of length 10 of random integers. You will submit each list to the two sort methods and keep track of how many comparisons were required to sort each list. You will then report the minimum number of comparisons, the maximum number of comparisons, and the average number of comparisons for for each sorting algorithms. Finally, you will plot an appropriate labeled histogram for each list.
+* Next, in your `main()` function, you will create two empty lists `bubblelist` and `selectionlist`. You will generate 1000 different lists of length 10 of random integers using some function in the `random` library.  You will submit each list to the two sort methods and keep track of how many comparisons were required to sort each list. You will then report the minimum number of comparisons, the maximum number of comparisons, and the average number of comparisons for each sorting algorithm. Finally, you will plot an appropriate labeled histogram for each list.
 
 * Remember that you should frequently test your program by saving it and running it! Insert **print statements** to debug as needed.
 
-Below I have provided "pseudocode" for you to implement in your `main()` function. This pseudocode is included as comments in the `part2.py` file.
+Below I have provided pseudo-pseudocode for you to implement in your `main()` function. This pseudocode is included as comments in the `part2.py` file.
 
 ```
 declare bubblelist, selectionlist as empty lists
 declare counter as an int equal to 0
-while counter < 100
+while counter < 1000
    create list of length 10 containing ten random integers between 1 and 100 (duplicates are okay)
    make a copy of that list
    submit the first list to bubblesort()
